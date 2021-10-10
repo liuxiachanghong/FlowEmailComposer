@@ -1,4 +1,5 @@
 global with sharing class FlowEmailComposerCtrl {
+    
     @AuraEnabled 
     public static List<EmailTemplate> getEmailTemplates(){
         if(Schema.sObjectType.EmailTemplate.isAccessible() && Schema.sObjectType.Attachment.isAccessible()){
